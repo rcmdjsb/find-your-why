@@ -3,25 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Find Your "Why" | FSTT Education</title>
+  <title>Hosford - Finding Your Why? Reset Break</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between font-sans">
+<body class="bg-[#061a22] text-slate-100 min-h-screen flex flex-col justify-between font-sans">
 
   <!-- Header -->
-  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-10">
-    <div class="max-w-3xl mx-auto px-4 py-4 flex items-center justify-between">
-      <div>
-        <span class="text-xs font-bold uppercase tracking-widest text-rose-400">Start Over • FSTT Education</span>
-        <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight text-white">FIND YOUR "WHY"</h1>
+  <header class="border-b border-[#1f7a99]/40 bg-[#092631]/95 backdrop-blur sticky top-0 z-10 shadow-lg">
+    <div class="max-w-3xl mx-auto px-4 py-3.5 flex items-center justify-between gap-3">
+      <div class="flex items-center gap-3.5">
+        <img src="logo.jpeg" alt="Hosford Husky Logo" class="w-12 h-12 rounded-xl object-cover border-2 border-[#7cc9e8] shadow-md bg-[#1a7a9a]" />
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-widest text-[#7cc9e8]">Hosford Middle School • Reset Break</span>
+          <h1 class="text-lg sm:text-xl font-extrabold tracking-tight text-white leading-tight">Hosford - Finding Your Why? Reset Break</h1>
+        </div>
       </div>
-      <div id="stepIndicator" class="text-xs font-semibold px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
+      <div id="stepIndicator" class="shrink-0 text-xs font-bold px-3 py-1.5 rounded-full bg-[#1f7a99]/30 text-[#7cc9e8] border border-[#7cc9e8]/40">
         Step 1 of 5
       </div>
     </div>
     <!-- Progress Bar -->
-    <div class="w-full bg-slate-800 h-1.5">
-      <div id="progressBar" class="bg-rose-500 h-1.5 transition-all duration-300" style="width: 20%"></div>
+    <div class="w-full bg-[#092631] h-1.5">
+      <div id="progressBar" class="bg-[#7cc9e8] h-1.5 transition-all duration-300" style="width: 20%"></div>
     </div>
   </header>
 
@@ -30,21 +33,21 @@
 
     <!-- ================= STAGE 1: BASELINE FUEL & 3 WORDS ================= -->
     <section id="stage1" class="space-y-6">
-      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-6">
+      <div class="bg-[#092631] border border-[#1f7a99]/50 rounded-2xl p-6 shadow-xl space-y-6">
         <div>
           <h2 class="text-lg font-bold text-white">Part 1: The Starting Motivation Meter</h2>
-          <p class="text-sm text-slate-400 mt-1">Be completely honest. Nobody is grading your number.</p>
+          <p class="text-sm text-slate-300 mt-1">Be completely honest. Nobody is grading your number.</p>
         </div>
 
         <!-- Student Info -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div class="sm:col-span-2">
-            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Your Name (First + Last Initial)</label>
-            <input id="studentName" type="text" placeholder="e.g., Maya R." class="w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-3 text-white focus:outline-none focus:border-rose-500" />
+            <label class="block text-xs font-semibold uppercase tracking-wider text-[#7cc9e8] mb-1.5">Your Name (First + Last Initial)</label>
+            <input id="studentName" type="text" placeholder="e.g., Maya R." class="w-full rounded-xl bg-[#061a22] border border-[#1f7a99]/60 px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-[#7cc9e8]" />
           </div>
           <div>
-            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1.5">Period</label>
-            <select id="periodSelect" class="w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-3 text-white focus:outline-none focus:border-rose-500">
+            <label class="block text-xs font-semibold uppercase tracking-wider text-[#7cc9e8] mb-1.5">Period</label>
+            <select id="periodSelect" class="w-full rounded-xl bg-[#061a22] border border-[#1f7a99]/60 px-4 py-3 text-white focus:outline-none focus:border-[#7cc9e8]">
               <option value="Period 1">Period 1</option>
               <option value="Period 4">Period 4</option>
               <option value="Period 5">Period 5</option>
@@ -57,11 +60,11 @@
         <!-- 1 to 10 Fuel Meter -->
         <div>
           <div class="flex justify-between items-center mb-2">
-            <label class="text-sm font-semibold text-slate-200">How motivated do you feel right now to tackle challenging schoolwork?</label>
-            <span id="startFuelBadge" class="text-sm font-bold text-rose-400">Select 1–10</span>
+            <label class="text-sm font-semibold text-slate-100">How motivated do you feel right now to tackle challenging schoolwork?</label>
+            <span id="startFuelBadge" class="text-sm font-bold text-[#7cc9e8]">Select 1–10</span>
           </div>
           <div id="startFuelGrid" class="grid grid-cols-5 sm:grid-cols-10 gap-2"></div>
-          <div class="flex justify-between text-xs text-slate-500 mt-1.5 font-medium">
+          <div class="flex justify-between text-xs text-slate-400 mt-1.5 font-medium">
             <span>1 = Tank Empty</span>
             <span>10 = Tank Full</span>
           </div>
@@ -69,11 +72,11 @@
 
         <!-- 3 Words -->
         <div>
-          <label class="block text-sm font-semibold text-slate-200 mb-1.5">In 3 words, how do you currently feel about school?</label>
-          <input id="threeWords" type="text" placeholder="e.g., tired, stressed, overwhelmed" class="w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-3 text-white focus:outline-none focus:border-rose-500" />
+          <label class="block text-sm font-semibold text-slate-100 mb-1.5">In 3 words, how do you currently feel about school?</label>
+          <input id="threeWords" type="text" placeholder="e.g., tired, stressed, overwhelmed" class="w-full rounded-xl bg-[#061a22] border border-[#1f7a99]/60 px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-[#7cc9e8]" />
         </div>
 
-        <button onclick="submitStage1()" class="w-full py-3.5 rounded-xl bg-rose-600 hover:bg-rose-500 font-bold text-white shadow-lg transition">
+        <button onclick="submitStage1()" class="w-full py-3.5 rounded-xl bg-[#1f7a99] hover:bg-[#2793b8] font-bold text-white shadow-lg border border-[#7cc9e8]/30 transition">
           Submit &amp; Choose My Driver →
         </button>
       </div>
@@ -81,39 +84,42 @@
 
     <!-- ================= STAGE 2: CHOOSE YOUR DRIVER ================= -->
     <section id="stage2" class="hidden space-y-6">
-      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-5">
+      <div class="bg-[#092631] border border-[#1f7a99]/50 rounded-2xl p-6 shadow-xl space-y-5">
         <div>
           <h2 class="text-lg font-bold text-white">Part 2: Choose Your Driver (The 4 Fuel Sources)</h2>
-          <p class="text-sm text-slate-400 mt-1">Read all four boxes. Tap the <strong>one</strong> reason that hits home most for you right now.</p>
+          <p class="text-sm text-slate-300 mt-1">Read all four boxes. Tap the <strong>one</strong> reason that hits home most for you right now.</p>
         </div>
 
         <div id="driversGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
 
         <div class="flex gap-3 pt-2">
-          <button onclick="goToStage(1)" class="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold">← Back</button>
-          <button onclick="submitStage2()" class="flex-grow py-3.5 rounded-xl bg-rose-600 hover:bg-rose-500 font-bold text-white shadow-lg transition">
-            Watch Video for My Driver →
+          <button onclick="goToStage(1)" class="px-5 py-3 rounded-xl bg-[#061a22] hover:bg-slate-900 border border-[#1f7a99]/50 text-slate-300 font-semibold">← Back</button>
+          <button onclick="submitStage2()" class="flex-grow py-3.5 rounded-xl bg-[#1f7a99] hover:bg-[#2793b8] font-bold text-white shadow-lg border border-[#7cc9e8]/30 transition">
+            Choose a Video for My Driver →
           </button>
         </div>
       </div>
     </section>
 
-    <!-- ================= STAGE 3: TARGETED YOUTUBE VIDEO ================= -->
+    <!-- ================= STAGE 3: CHOICE OF 2 YOUTUBE VIDEOS ================= -->
     <section id="stage3" class="hidden space-y-6">
-      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-5">
+      <div class="bg-[#092631] border border-[#1f7a99]/50 rounded-2xl p-6 shadow-xl space-y-5">
         <div>
-          <span id="chosenDriverTag" class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-rose-500/20 text-rose-300 border border-rose-500/30">Driver</span>
-          <h2 class="text-lg font-bold text-white mt-2">Part 3: Fuel Up — Watch This Clip</h2>
-          <p id="videoPromptText" class="text-sm text-slate-400 mt-1">Watch closely with your chosen driver in mind.</p>
+          <span id="chosenDriverTag" class="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-[#1f7a99]/30 text-[#7cc9e8] border border-[#7cc9e8]/40">Driver</span>
+          <h2 class="text-lg font-bold text-white mt-2">Part 3: Fuel Up — Pick One Video to Watch</h2>
+          <p id="videoPromptText" class="text-sm text-slate-300 mt-1">Choose either option below and watch closely with your driver in mind.</p>
         </div>
 
+        <!-- 2 Video Choice Buttons -->
+        <div id="videoChoicesGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+
         <!-- Responsive 16:9 YouTube Embed -->
-        <div class="relative w-full overflow-hidden rounded-xl border border-slate-700 bg-black" style="padding-top: 56.25%;">
+        <div class="relative w-full overflow-hidden rounded-xl border border-[#1f7a99]/60 bg-black shadow-inner" style="padding-top: 56.25%;">
           <iframe id="youtubePlayer" class="absolute inset-0 w-full h-full" src="" title="Motivation Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div class="flex gap-3 pt-2">
-          <button onclick="goToStage(2)" class="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold">← Change Driver</button>
+          <button onclick="goToStage(2)" class="px-5 py-3 rounded-xl bg-[#061a22] hover:bg-slate-900 border border-[#1f7a99]/50 text-slate-300 font-semibold">← Change Driver</button>
           <button onclick="goToStage(4)" class="flex-grow py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-bold text-white shadow-lg transition">
             I Watched It — Make It Yours →
           </button>
@@ -123,15 +129,15 @@
 
     <!-- ================= STAGE 4: SKETCH OR WRITE ================= -->
     <section id="stage4" class="hidden space-y-6">
-      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-5">
+      <div class="bg-[#092631] border border-[#1f7a99]/50 rounded-2xl p-6 shadow-xl space-y-5">
         <div>
           <h2 class="text-lg font-bold text-white">Part 4: Make It Yours (Write or Sketch)</h2>
-          <p class="text-sm text-slate-400 mt-1">Show what your personal "Why" looks like in real life—either write 2–3 sentences OR draw a symbol, picture, or logo.</p>
+          <p class="text-sm text-slate-300 mt-1">Show what your personal "Why" looks like in real life—either write 2–3 sentences OR draw a symbol, picture, or logo.</p>
         </div>
 
         <!-- Mode Switcher Tabs -->
-        <div class="grid grid-cols-2 gap-2 bg-slate-950 p-1.5 rounded-xl border border-slate-800">
-          <button id="tabWrite" onclick="setReflectionMode('write')" class="py-2.5 rounded-lg font-bold text-sm bg-rose-600 text-white transition">
+        <div class="grid grid-cols-2 gap-2 bg-[#061a22] p-1.5 rounded-xl border border-[#1f7a99]/40">
+          <button id="tabWrite" onclick="setReflectionMode('write')" class="py-2.5 rounded-lg font-bold text-sm bg-[#1f7a99] text-white transition">
             ✍️ Write (2–3 Sentences)
           </button>
           <button id="tabSketch" onclick="setReflectionMode('sketch')" class="py-2.5 rounded-lg font-bold text-sm text-slate-400 hover:text-white transition">
@@ -141,30 +147,30 @@
 
         <!-- Write Box -->
         <div id="writePanel">
-          <textarea id="writtenReflection" rows="5" placeholder="Write 2–3 sentences describing what your 'Why' looks like in real life and why it matters to you..." class="w-full rounded-xl bg-slate-950 border border-slate-700 p-4 text-white focus:outline-none focus:border-rose-500"></textarea>
+          <textarea id="writtenReflection" rows="5" placeholder="Write 2–3 sentences describing what your 'Why' looks like in real life and why it matters to you..." class="w-full rounded-xl bg-[#061a22] border border-[#1f7a99]/60 p-4 text-white placeholder-slate-500 focus:outline-none focus:border-[#7cc9e8]"></textarea>
         </div>
 
         <!-- Sketch Canvas Box -->
         <div id="sketchPanel" class="hidden space-y-3">
-          <div class="flex flex-wrap items-center justify-between gap-2 bg-slate-950 p-2.5 rounded-xl border border-slate-800">
+          <div class="flex flex-wrap items-center justify-between gap-2 bg-[#061a22] p-2.5 rounded-xl border border-[#1f7a99]/40">
             <div class="flex items-center gap-2">
               <button onclick="setBrushColor('#ffffff')" class="w-7 h-7 rounded-full bg-white border-2 border-slate-600" title="White"></button>
-              <button onclick="setBrushColor('#f43f5e')" class="w-7 h-7 rounded-full bg-rose-500 border-2 border-slate-600" title="Red"></button>
+              <button onclick="setBrushColor('#7cc9e8')" class="w-7 h-7 rounded-full bg-[#7cc9e8] border-2 border-slate-600" title="Husky Ice Blue"></button>
               <button onclick="setBrushColor('#10b981')" class="w-7 h-7 rounded-full bg-emerald-500 border-2 border-slate-600" title="Green"></button>
-              <button onclick="setBrushColor('#38bdf8')" class="w-7 h-7 rounded-full bg-sky-400 border-2 border-slate-600" title="Blue"></button>
               <button onclick="setBrushColor('#facc15')" class="w-7 h-7 rounded-full bg-yellow-400 border-2 border-slate-600" title="Yellow"></button>
+              <button onclick="setBrushColor('#f43f5e')" class="w-7 h-7 rounded-full bg-rose-500 border-2 border-slate-600" title="Red"></button>
             </div>
-            <button onclick="clearCanvas()" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-300">
+            <button onclick="clearCanvas()" class="px-3 py-1.5 rounded-lg bg-[#092631] hover:bg-[#1f7a99]/40 border border-[#1f7a99]/50 text-xs font-semibold text-slate-200">
               Clear Canvas
             </button>
           </div>
-          <canvas id="sketchCanvas" width="640" height="300" class="w-full h-64 bg-slate-950 rounded-xl border border-slate-700 touch-none cursor-crosshair"></canvas>
-          <p class="text-xs text-slate-500">Use your trackpad, mouse, or Chromebook touchscreen to draw.</p>
+          <canvas id="sketchCanvas" width="640" height="300" class="w-full h-64 bg-[#061a22] rounded-xl border border-[#1f7a99]/60 touch-none cursor-crosshair"></canvas>
+          <p class="text-xs text-slate-400">Use your trackpad, mouse, or Chromebook touchscreen to draw.</p>
         </div>
 
         <div class="flex gap-3 pt-2">
-          <button onclick="goToStage(3)" class="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold">← Rewatch Video</button>
-          <button onclick="submitStage4()" class="flex-grow py-3.5 rounded-xl bg-rose-600 hover:bg-rose-500 font-bold text-white shadow-lg transition">
+          <button onclick="goToStage(3)" class="px-5 py-3 rounded-xl bg-[#061a22] hover:bg-slate-900 border border-[#1f7a99]/50 text-slate-300 font-semibold">← Rewatch Video</button>
+          <button onclick="submitStage4()" class="flex-grow py-3.5 rounded-xl bg-[#1f7a99] hover:bg-[#2793b8] font-bold text-white shadow-lg border border-[#7cc9e8]/30 transition">
             Next: Rerate Fuel &amp; Plan Action →
           </button>
         </div>
@@ -173,31 +179,31 @@
 
     <!-- ================= STAGE 5: RERATE & NEXT STEPS ================= -->
     <section id="stage5" class="hidden space-y-6">
-      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-6">
+      <div class="bg-[#092631] border border-[#1f7a99]/50 rounded-2xl p-6 shadow-xl space-y-6">
         <div>
           <h2 class="text-lg font-bold text-white">Part 5: Final Motivation Meter &amp; Next Steps</h2>
-          <p class="text-sm text-slate-400 mt-1">After thinking about your people, your future, and who you are becoming—where is your tank now?</p>
+          <p class="text-sm text-slate-300 mt-1">After thinking about your people, your future, and who you are becoming—where is your tank now?</p>
         </div>
 
         <!-- Ending 1 to 10 Fuel Meter -->
         <div>
           <div class="flex justify-between items-center mb-2">
-            <label class="text-sm font-semibold text-slate-200">My Ending Motivation Number (1–10):</label>
-            <span id="endFuelBadge" class="text-sm font-bold text-emerald-400">Select 1–10</span>
+            <label class="text-sm font-semibold text-slate-100">My Ending Motivation Number (1–10):</label>
+            <span id="endFuelBadge" class="text-sm font-bold text-[#7cc9e8]">Select 1–10</span>
           </div>
           <div id="endFuelGrid" class="grid grid-cols-5 sm:grid-cols-10 gap-2"></div>
         </div>
 
         <!-- 3 Next Steps -->
         <div class="space-y-3">
-          <label class="block text-sm font-semibold text-slate-200">What are your 3 concrete next steps to get back on task or succeed today?</label>
-          <input id="step1" type="text" placeholder="1. First action I will take right now..." class="w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500" />
-          <input id="step2" type="text" placeholder="2. Second step..." class="w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500" />
-          <input id="step3" type="text" placeholder="3. Third step..." class="w-full rounded-xl bg-slate-950 border border-slate-700 px-4 py-2.5 text-white focus:outline-none focus:border-emerald-500" />
+          <label class="block text-sm font-semibold text-slate-100">What are your 3 concrete next steps to get back on task or succeed today?</label>
+          <input id="step1" type="text" placeholder="1. First action I will take right now..." class="w-full rounded-xl bg-[#061a22] border border-[#1f7a99]/60 px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-[#7cc9e8]" />
+          <input id="step2" type="text" placeholder="2. Second step..." class="w-full rounded-xl bg-[#061a22] border border-[#1f7a99]/60 px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-[#7cc9e8]" />
+          <input id="step3" type="text" placeholder="3. Third step..." class="w-full rounded-xl bg-[#061a22] border border-[#1f7a99]/60 px-4 py-2.5 text-white placeholder-slate-500 focus:outline-none focus:border-[#7cc9e8]" />
         </div>
 
         <div class="flex gap-3 pt-2">
-          <button onclick="goToStage(4)" class="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold">← Back</button>
+          <button onclick="goToStage(4)" class="px-5 py-3 rounded-xl bg-[#061a22] hover:bg-slate-900 border border-[#1f7a99]/50 text-slate-300 font-semibold">← Back</button>
           <button id="finalSubmitBtn" onclick="submitAllToSheet()" class="flex-grow py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-bold text-white shadow-lg transition">
             Finish &amp; Submit My "Why" ✓
           </button>
@@ -207,22 +213,23 @@
 
     <!-- ================= STAGE 6: COMPLETION SUMMARY ================= -->
     <section id="stageDone" class="hidden">
-      <div class="bg-slate-900 border border-emerald-500/40 rounded-2xl p-8 shadow-xl text-center space-y-5">
-        <div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-400 text-2xl font-bold">✓</div>
-        <h2 class="text-2xl font-extrabold text-white">Your "Why" Is Locked In</h2>
-        <p id="summaryShiftText" class="text-slate-300 text-base"></p>
-        <div class="bg-slate-950 border border-slate-800 rounded-xl p-4 text-left max-w-md mx-auto space-y-2 text-sm">
-          <div><span class="text-slate-500">Driver:</span> <span id="summaryDriver" class="font-semibold text-rose-400"></span></div>
-          <div><span class="text-slate-500">Step 1:</span> <span id="summaryStep1" class="text-slate-200"></span></div>
+      <div class="bg-[#092631] border border-[#7cc9e8]/50 rounded-2xl p-8 shadow-xl text-center space-y-5">
+        <img src="logo.jpeg" alt="Hosford Husky" class="w-16 h-16 rounded-2xl mx-auto border-2 border-[#7cc9e8] shadow-md" />
+        <h2 class="text-2xl font-extrabold text-white">Your "Why" Is Locked In, Husky</h2>
+        <p id="summaryShiftText" class="text-slate-200 text-base"></p>
+        <div class="bg-[#061a22] border border-[#1f7a99]/50 rounded-xl p-4 text-left max-w-md mx-auto space-y-2 text-sm">
+          <div><span class="text-slate-400">Driver:</span> <span id="summaryDriver" class="font-semibold text-[#7cc9e8]"></span></div>
+          <div><span class="text-slate-400">Video Watched:</span> <span id="summaryVideo" class="text-slate-200"></span></div>
+          <div><span class="text-slate-400">Step 1:</span> <span id="summaryStep1" class="text-slate-200"></span></div>
         </div>
-        <p class="text-xs text-slate-500">Your responses have been recorded. Close this tab or get started on Step 1!</p>
+        <p class="text-xs text-slate-400">Your responses have been recorded. Close this tab and get started on Step 1!</p>
       </div>
     </section>
 
   </main>
 
-  <footer class="text-center text-xs text-slate-600 py-4 border-t border-slate-900">
-    Chris Bach | FSTT Education • FailedStudent.com
+  <footer class="text-center text-xs text-slate-400 py-4 border-t border-[#1f7a99]/30 bg-[#092631]/60">
+    Hosford Middle School • Chris Bach | FSTT Education • FailedStudent.com
   </footer>
 
   <script>
@@ -236,29 +243,41 @@
         id: 'family',
         title: '1. My Family & People',
         desc: 'Your parents, guardians, or family members want you to have options they might not have had. Making them proud—or creating a better future for the people you love—is powerful fuel.',
-        youtubeId: 'ZXsQAXx_ao0', // Replace with your preferred YouTube video ID
-        videoPrompt: 'Think about the people in your corner who want to see you win.'
+        videoPrompt: 'Pick one video below and think about the people in your corner who want to see you win.',
+        videos: [
+          { label: 'Option A: Making Your People Proud', youtubeId: 'ZXsQAXx_ao0' },
+          { label: 'Option B: Building a Better Future', youtubeId: 'g-jwWYX7Jlo' }
+        ]
       },
       {
         id: 'career',
         title: '2. Future Career & Independence',
         desc: 'Whether you want to build cars, create video games, run a business, become a nurse, work in tech, or weld, school is where you practice solving problems nobody hands you the answers to.',
-        youtubeId: 'g-jwWYX7Jlo', // Replace with your preferred YouTube video ID
-        videoPrompt: 'Focus on the freedom and independence you are building for your future self.'
+        videoPrompt: 'Pick one video below and focus on the freedom and independence you are building for your future self.',
+        videos: [
+          { label: 'Option A: Own Your Future & Skills', youtubeId: 'g-jwWYX7Jlo' },
+          { label: 'Option B: Problem Solvers Win', youtubeId: 'Tuw8hxrFBH8' }
+        ]
       },
       {
         id: 'highschool',
         title: '3. High School Readiness & Pride',
         desc: 'High school is right around the corner. The habits you build right now—showing up when you don’t feel like it and bouncing back from a bad grade—determine whether 9th grade is a brick wall or an open runway.',
-        youtubeId: 'Tuw8hxrFBH8', // Replace with your preferred YouTube video ID
-        videoPrompt: 'Think about walking into 9th grade ready instead of playing catch-up.'
+        videoPrompt: 'Pick one video below and think about walking into 9th grade ready instead of playing catch-up.',
+        videos: [
+          { label: 'Option A: Discipline & Daily Habits', youtubeId: 'Tuw8hxrFBH8' },
+          { label: 'Option B: Bouncing Back Stronger', youtubeId: 'mgmVOuLgFB0' }
+        ]
       },
       {
         id: 'identity',
         title: '4. My Voice, Creativity & Identity',
         desc: 'The real world rewards people who think for themselves. When you push through frustrating parts of school, you earn the right to share your unique voice, create cool things, and prove the doubters wrong.',
-        youtubeId: 'mgmVOuLgFB0', // Replace with your preferred YouTube video ID
-        videoPrompt: 'Think about what you want to create and how you want to prove the doubters wrong.'
+        videoPrompt: 'Pick one video below and think about what you want to create and how you want to prove the doubters wrong.',
+        videos: [
+          { label: 'Option A: Prove the Doubters Wrong', youtubeId: 'mgmVOuLgFB0' },
+          { label: 'Option B: Your Voice & Potential', youtubeId: 'ZXsQAXx_ao0' }
+        ]
       }
     ];
 
@@ -269,6 +288,7 @@
       startFuel: null,
       endFuel: null,
       selectedDriver: null,
+      selectedVideo: null,
       reflectionType: 'write',
       hasDrawn: false
     };
@@ -277,14 +297,14 @@
       const container = document.getElementById(containerId);
       const colors = [
         'bg-red-600', 'bg-red-500', 'bg-orange-600', 'bg-orange-500', 'bg-amber-500',
-        'bg-yellow-500', 'bg-lime-500', 'bg-green-500', 'bg-emerald-500', 'bg-emerald-400'
+        'bg-yellow-500', 'bg-lime-500', 'bg-teal-400', 'bg-[#7cc9e8]', 'bg-emerald-400'
       ];
       for (let i = 1; i <= 10; i++) {
         const btn = document.createElement('button');
         btn.type = 'button';
         btn.textContent = i;
         btn.dataset.val = i;
-        btn.className = `fuel-btn-${type} py-3 rounded-xl font-extrabold text-sm border border-slate-700 bg-slate-950 text-slate-300 hover:border-white transition`;
+        btn.className = `fuel-btn-${type} py-3 rounded-xl font-extrabold text-sm border border-[#1f7a99]/60 bg-[#061a22] text-slate-300 hover:border-[#7cc9e8] transition`;
         btn.onclick = () => selectFuel(type, i, colors[i - 1]);
         container.appendChild(btn);
       }
@@ -302,7 +322,7 @@
         const isSelected = Number(btn.dataset.val) === val;
         btn.className = isSelected
           ? `fuel-btn-${type} py-3 rounded-xl font-extrabold text-sm border-2 border-white ${activeColor} text-slate-950 scale-105 shadow-lg transition`
-          : `fuel-btn-${type} py-3 rounded-xl font-extrabold text-sm border border-slate-700 bg-slate-950 text-slate-400 hover:border-slate-500 transition`;
+          : `fuel-btn-${type} py-3 rounded-xl font-extrabold text-sm border border-[#1f7a99]/50 bg-[#061a22] text-slate-400 hover:border-[#7cc9e8]/60 transition`;
       });
     }
 
@@ -312,24 +332,25 @@
         const card = document.createElement('button');
         card.type = 'button';
         card.id = `driver-card-${driver.id}`;
-        card.className = 'text-left p-5 rounded-2xl border-2 border-slate-800 bg-slate-950 hover:border-slate-600 transition space-y-2';
+        card.className = 'text-left p-5 rounded-2xl border-2 border-[#1f7a99]/40 bg-[#061a22] hover:border-[#7cc9e8]/70 transition space-y-2';
         card.innerHTML = `
           <div class="flex justify-between items-center">
             <span class="font-bold text-white text-base">${driver.title}</span>
             <span class="driver-star text-lg text-slate-600">★</span>
           </div>
-          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">${driver.desc}</p>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">${driver.desc}</p>
         `;
         card.onclick = () => {
           state.selectedDriver = driver;
+          state.selectedVideo = driver.videos[0];
           DRIVERS.forEach(d => {
             const el = document.getElementById(`driver-card-${d.id}`);
             const star = el.querySelector('.driver-star');
             if (d.id === driver.id) {
-              el.className = 'text-left p-5 rounded-2xl border-2 border-rose-500 bg-rose-950/20 transition space-y-2 shadow-lg';
-              star.className = 'driver-star text-lg text-amber-400';
+              el.className = 'text-left p-5 rounded-2xl border-2 border-[#7cc9e8] bg-[#1f7a99]/25 transition space-y-2 shadow-lg';
+              star.className = 'driver-star text-lg text-[#7cc9e8]';
             } else {
-              el.className = 'text-left p-5 rounded-2xl border-2 border-slate-800 bg-slate-950 hover:border-slate-600 transition space-y-2';
+              el.className = 'text-left p-5 rounded-2xl border-2 border-[#1f7a99]/40 bg-[#061a22] hover:border-[#7cc9e8]/70 transition space-y-2';
               star.className = 'driver-star text-lg text-slate-600';
             }
           });
@@ -338,11 +359,36 @@
       });
     }
 
+    function renderVideoChoices(driver) {
+      const grid = document.getElementById('videoChoicesGrid');
+      grid.innerHTML = '';
+      driver.videos.forEach((vid, idx) => {
+        const isSelected = state.selectedVideo && state.selectedVideo.youtubeId === vid.youtubeId && state.selectedVideo.label === vid.label;
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = isSelected
+          ? 'p-3.5 rounded-xl border-2 border-[#7cc9e8] bg-[#1f7a99]/30 text-left transition flex items-center justify-between'
+          : 'p-3.5 rounded-xl border border-[#1f7a99]/50 bg-[#061a22] hover:border-[#7cc9e8]/60 text-left transition flex items-center justify-between';
+        btn.innerHTML = `
+          <div>
+            <div class="text-[11px] font-bold uppercase tracking-wider text-[#7cc9e8]">Video Choice ${idx + 1}</div>
+            <div class="text-sm font-bold text-white mt-0.5">${vid.label}</div>
+          </div>
+          <span class="text-lg ${isSelected ? 'text-[#7cc9e8]' : 'text-slate-500'}">▶</span>
+        `;
+        btn.onclick = () => {
+          state.selectedVideo = vid;
+          document.getElementById('youtubePlayer').src = `https://www.youtube.com/embed/${vid.youtubeId}?rel=0`;
+          renderVideoChoices(driver);
+        };
+        grid.appendChild(btn);
+      });
+    }
+
     // =========================================================================
     // 3. NAVIGATION & VALIDATION
     // =========================================================================
     function goToStage(num) {
-      // Stop YouTube playback if leaving Stage 3
       if (num !== 3) {
         document.getElementById('youtubePlayer').src = '';
       }
@@ -356,7 +402,9 @@
       if (num === 3 && state.selectedDriver) {
         document.getElementById('chosenDriverTag').textContent = state.selectedDriver.title;
         document.getElementById('videoPromptText').textContent = state.selectedDriver.videoPrompt;
-        document.getElementById('youtubePlayer').src = `https://www.youtube.com/embed/${state.selectedDriver.youtubeId}?rel=0`;
+        if (!state.selectedVideo) state.selectedVideo = state.selectedDriver.videos[0];
+        renderVideoChoices(state.selectedDriver);
+        document.getElementById('youtubePlayer').src = `https://www.youtube.com/embed/${state.selectedVideo.youtubeId}?rel=0`;
       }
     }
 
@@ -439,10 +487,10 @@
       document.getElementById('writePanel').classList.toggle('hidden', mode !== 'write');
       document.getElementById('sketchPanel').classList.toggle('hidden', mode !== 'sketch');
       document.getElementById('tabWrite').className = mode === 'write'
-        ? 'py-2.5 rounded-lg font-bold text-sm bg-rose-600 text-white transition'
+        ? 'py-2.5 rounded-lg font-bold text-sm bg-[#1f7a99] text-white transition'
         : 'py-2.5 rounded-lg font-bold text-sm text-slate-400 hover:text-white transition';
       document.getElementById('tabSketch').className = mode === 'sketch'
-        ? 'py-2.5 rounded-lg font-bold text-sm bg-rose-600 text-white transition'
+        ? 'py-2.5 rounded-lg font-bold text-sm bg-[#1f7a99] text-white transition'
         : 'py-2.5 rounded-lg font-bold text-sm text-slate-400 hover:text-white transition';
     }
 
@@ -469,6 +517,7 @@
         startFuel: state.startFuel,
         threeWords: document.getElementById('threeWords').value.trim(),
         driver: state.selectedDriver.title,
+        videoWatched: state.selectedVideo ? state.selectedVideo.label : '',
         reflectionType: state.reflectionType,
         writtenReflection: state.reflectionType === 'write' ? document.getElementById('writtenReflection').value.trim() : '(Submitted Sketch)',
         sketchData: sketchDataUrl,
@@ -499,6 +548,7 @@
         : `You checked in at ${state.startFuel}/10 and finished at ${state.endFuel}/10.`;
       document.getElementById('summaryShiftText').textContent = diffMsg;
       document.getElementById('summaryDriver').textContent = state.selectedDriver.title;
+      document.getElementById('summaryVideo').textContent = state.selectedVideo ? state.selectedVideo.label : '';
       document.getElementById('summaryStep1').textContent = s1;
     }
 
